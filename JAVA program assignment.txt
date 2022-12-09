@@ -1,0 +1,224 @@
+NAME : P vijay
+-------------------------------------------------------------------------
+
+import java.util.*;
+public class Vijay
+{
+public static void main(String[] args)   
+{  
+  
+Scanner sc=new Scanner(System.in);  
+int n=sc.nextInt(); 
+int temp=n;
+int r,sum=0;
+while(n>0){
+    r=n%10;
+    n=n/10;
+    sum=sum+r*r*r;
+}if(temp==sum){
+    System.out.println("it's armstring number");
+}else{
+    System.out.println("it in't armstring number");
+}
+ 
+}
+}
+------------------------------------------------------------------------------------
+Even Number program:
+
+
+import java.util.*;
+public class Vijay
+{
+public static void main(String[] args)   
+{  
+  
+Scanner sc=new Scanner(System.in);  
+int n=sc.nextInt(); 
+
+if(n%2==0){
+    System.out.println("it is even number ");
+}else{
+    System.out.println("it is't even number");
+}
+ 
+}
+}
+-------------------------------------------------------------------------------
+Factorial program:
+
+import java.util.*;
+
+public class Factorial {
+	static int fact(int num,int f)
+	{
+		
+	    while(num>0)
+		{
+		  f = f * num;
+		  num--;
+		}
+		return f;
+	}
+	public static void main(String[] args) {
+		Scanner scn  = new Scanner(System.in);
+		int num = scn.nextInt();
+		int f = scn.nextInt();
+		int k = Factorial.fact(num, f);
+		System.out.println("factoial of "+num+" is "+k);
+	}
+}
+-----------------------------------------------------------------------------
+Fibonacci Program:
+
+
+import java.util.*;
+public class Main
+{
+    public static void main(String args[]){
+        Scanner scan=new Scanner (System.in);
+       int N=scan.nextInt();
+       int a=0,b=1;
+       int c=0;
+       System.out.print(a+" ");
+       System.out.print(b+" ");
+       for(int i=0;i<=N;i++){
+           c=a+b;
+           System.out.print(c+" ");
+           a=b;
+           b=c;
+           
+       }
+    }  
+}
+__________________________________________________________________________________________
+prime number:
+
+import java.util.*;
+
+public class Prime{
+		public static void main(String[] args) {
+			Scanner scn = new Scanner(System.in);
+			System.out.println("Enter the value");
+			int x = scn.nextInt();
+			int m = 0;
+			int flag = 0;
+			m = x/2;
+			if(x == 0||x == 1)
+			{
+				System.out.println(x+" is not a prime number");
+			}
+			else
+			{
+				for(int i = 2;i<=m;i++)
+				{
+					if(x %i == 0)
+					{
+						System.out.println(x +" is not a prime number");
+						flag = 1;
+						break ;
+					}
+				}	
+			}
+			if(flag == 0)
+			{
+				System.out.println(x + "is a prime number");
+			}
+		}}
+_____________________________________________________________________________________________________________________
+
+swipe number Without Third variable program:
+
+
+import java.util.*;
+
+public class Swape {
+ public static void main(String[] args) {
+	Scanner scn = new Scanner(System.in);
+	int a = scn.nextInt();
+	System.out.println("before a value is"+a);
+	int b = scn.nextInt();
+	System.out.println("before b value is"+b);
+	a = a + b ;
+	b = a - b ;
+	a = a - b ;
+	System.out.println("after a value is"+a);
+	System.out.println("after b values is "+b);
+}
+}
+
+
+---------------------------------------------------------------------------------------------------------
+
+public class Arthimetic {
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		int a = scn.nextInt();
+		int b = scn.nextInt();
+		int choice = scn.nextInt();
+		switch(choice)
+		{
+			case 1:
+				System.out.println(a+b);
+				break;
+			case 2:
+				System.out.println(a-b);
+				break;
+			case 3:
+				System.out.println(a*b);
+				break;
+			case 4:
+				System.out.println(a/b);
+				break;
+			case 5:
+				System.out.println(a%b);
+				break;
+			case 6:
+				System.out.println(a == b);
+				break;
+				default:
+					System.out.println("Invalid choice");
+		}
+}
+}
+
+____________________________________________________________________________________________________________
+
+
+Letters Program:
+
+
+import java.util.*;
+
+public class Letters {
+	public static void main(String[] args) {
+		
+		int a[] = new int[] {'a','b','c','d','e','f','g','h','i','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+		for(int i = 0;i<a.length;i++)
+		{
+			char t = (char) a[i];
+			System.out.println(t);
+		}
+		System.out.println("=");
+		int b[] = new int[] {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+		for(int i = 0;i<b.length;i++)
+		{
+			char k = (char) b[i];
+
+			System.out.println(k);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

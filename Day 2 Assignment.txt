@@ -1,0 +1,164 @@
+prime number:
+
+
+import java.util.Scanner;
+public class primenumber {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("enter any number to check its prime or not");
+int variable =sc.nextInt();
+int count=0;
+for(int i=2;i<variable;i++) {
+if (variable%i==0) {
+count++;
+break;
+}
+}
+if(count==0) {
+System.out.println (variable+" is prime number");
+}
+else {
+System.out.println (variable+" is not prime number");
+}
+}
+}
+----------------------------------------------------------------------------------------------------------------------------
+
+
+Java program to find largest of three numbers:
+
+import java.util.Scanner;
+public class Vijay {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("enter 3 number to find largest number");
+int a =sc.nextInt();
+int b =sc.nextInt();
+int c =sc.nextInt();
+if(a> b && a>c) {
+System.out.println("The largest number is "+a);
+}
+else if (b>c) {
+System.out.println("The largest number is "+b);
+}
+else {
+System.out.println("The largest number is "+c);
+}
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+Java program to display even numbers from 1 to 100:
+
+public class OddOrEven {
+public static void main(String[] args) {
+for (int i = 1; i <= 100; i++) {
+if(i%2==0) {
+System.out.print(i+" ");
+}
+}
+}
+}
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+Java program to find sum of natural numbers:
+
+import java.util.Scanner;
+public class SumOfNaturalNumbers {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("enter how many number you want to sum:");
+int variable =sc.nextInt();
+int sum = 0;
+for (int i = 1; i <=variable ; i++) {
+sum = sum + i;
+}
+System.out.println(sum);
+}
+}
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+ Java program to print the elements of an array:
+
+import java.util.Scanner;
+public class PrintArrayElement {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("enter any many element you to add in array");
+int variable =sc.nextInt();
+int a[] = new int [variable];
+System.out.println("enter "+ variable+" element");
+for (int i = 0; i < variable; i++) {
+a[i]=sc.nextInt();
+}
+for (int i : a) {
+System.out.print(i+" ");
+}
+}
+}
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+How to convert double to string in java:
+
+import java.util.Scanner;
+
+public class DoubleToString {
+
+public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+
+System.out.println("enter double value");
+
+double variable =sc.nextDouble();
+
+String s = String.valueOf(variable);
+
+System.out.println(s);
+}
+}
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+program to swap 2 numbers with bitwise operator:
+
+import java.util.Scanner;
+
+public class SwappingTwoNumber {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+System.out.println("enter 2 number");
+int a =sc.nextInt();
+int b =sc.nextInt();
+System.out.println("Before swaping "+a+","+b);
+a=a^b;
+b=a^b;
+a=a^b;
+System.out.println("After swaping "+a+","+b);
+}
+}
+
+
+
+
+
+
